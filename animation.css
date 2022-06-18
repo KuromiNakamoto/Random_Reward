@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+config {
+    display: none;
+}
+
+.my_style_01 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.my_style_02 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.my_style_02 .my_style_03 {
+    padding: 0.5rem 0.75rem;
+    border: 2px solid rgb(192, 191, 191);
+    width: 500px;
+    border-radius: 0.35rem;
+    cursor: text;
+    transition: border .1s;
+    font-size: 14px;
+    color: rgb(50, 50, 50);
+}
+
+.my_style_02 .my_style_03:focus {
+    outline: 0;
+    border: 2px solid rgb(58, 106, 240);
+}
+
+.my_style_02 .my_style_03:disabled {
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.shape_button {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: box-shadow .3s;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0 0 0 5px rgba(167, 61, 61, 0.34);
+}
+
+.shape_button p {
+    margin: auto;
+    color: #fff;
+}
+
+.shape_button:hover {
+    box-shadow: inset 0 0 0 5px rgba(167, 61, 61, 0.652);
+}
